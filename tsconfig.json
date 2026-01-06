@@ -8,5 +8,5 @@
     "forceConsistentCasingInFileNames": true,
     "outDir": "dist"
   },
-  "include": ["tests/**/*.ts", ".donotpush/example.spec.ts"]
+  // "include": ["tests/**/*.ts", ".donotpush/example.spec.ts"]
 }
