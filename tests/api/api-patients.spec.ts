@@ -1,6 +1,7 @@
 import { test, expect, request, APIRequestContext } from '@playwright/test';
-import { TEST_ADMIN_CREDENTIALS } from '../common/auth';
-import { PatientsService } from '../services/patients.service';
+import { TEST_ADMIN_CREDENTIALS } from '../helpers/common/auth';
+import { PatientsService } from '../helpers/services/patients.service';
+
 
 const baseUrl = 'http://localhost:3001/';
 

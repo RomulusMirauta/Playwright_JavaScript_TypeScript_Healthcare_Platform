@@ -1,6 +1,7 @@
 import { test, expect, Page } from '@playwright/test';
-import { LoginPage } from '../page-objects/LoginPage';
-import { TEST_ADMIN_CREDENTIALS } from '../common/auth';
+import { LoginPage } from '../../helpers/page-objects/LoginPage';
+import { TEST_ADMIN_CREDENTIALS } from '../../helpers/common/auth';
+
 
 // Sample logout test
 test('logout redirects to login page', async ({ page }: { page: Page }) => {

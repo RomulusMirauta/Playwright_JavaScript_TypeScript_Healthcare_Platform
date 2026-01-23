@@ -8,7 +8,7 @@ if (!process.env.CI) {
     // dotenv is optional; ignore if not installed
   }
 }
-import { LoginPage, PatientsPage, DrugsPage } from '../page-objects/';
+import { LoginPage, PatientsPage, DrugsPage } from '../page-objects';
 import { BASE_URL } from '../common/config';
 
 type TestFixtures = {

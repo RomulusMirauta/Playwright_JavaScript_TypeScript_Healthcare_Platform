@@ -1,6 +1,7 @@
 import { test, expect, Page } from '@playwright/test';
-import { TEST_ADMIN_CREDENTIALS } from '../common/auth';
-import { LoginPage } from '../page-objects/LoginPage';
+import { TEST_ADMIN_CREDENTIALS } from '../../helpers/common/auth';
+import { LoginPage } from '../../helpers/page-objects/LoginPage';
+
 
 // Sample login test
 test('login with valid credentials', async ({ page }: { page: Page }) => {

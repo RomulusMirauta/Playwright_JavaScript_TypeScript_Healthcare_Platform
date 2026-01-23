@@ -1,10 +1,9 @@
 import { test, expect } from '@playwright/test';
 import sql from 'mssql';
-import { TEST_ADMIN_CREDENTIALS } from '../common/auth';
-import { DB_CONFIG } from '../common/config';
-import { LoginPage } from '../page-objects/LoginPage';
-import { PatientsPage } from '../page-objects/PatientsPage';
-
+import { TEST_ADMIN_CREDENTIALS } from '../helpers/common/auth';
+import { DB_CONFIG } from '../helpers/common/config';
+import { LoginPage } from '../helpers/page-objects/LoginPage';
+import { PatientsPage } from '../helpers/page-objects/PatientsPage';
 
 
 const patientData = {

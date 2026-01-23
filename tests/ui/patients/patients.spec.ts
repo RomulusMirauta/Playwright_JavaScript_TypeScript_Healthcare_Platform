@@ -1,7 +1,8 @@
 import { test, expect, Page } from '@playwright/test';
-import { LoginPage } from '../page-objects/LoginPage';
-import { PatientsPage } from '../page-objects/PatientsPage';
-import { TEST_ADMIN_CREDENTIALS } from '../common/auth';
+import { LoginPage } from '../../helpers/page-objects/LoginPage';
+import { PatientsPage } from '../../helpers/page-objects/PatientsPage';
+import { TEST_ADMIN_CREDENTIALS } from '../../helpers/common/auth';
+
 
 test('add and remove patient via UI', async ({ page }: { page: Page }) => {
   const login = new LoginPage(page);

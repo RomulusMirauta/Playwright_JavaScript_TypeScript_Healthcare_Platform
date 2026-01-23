@@ -1,6 +1,7 @@
 import { test, expect, Page } from '@playwright/test';
-import { LoginPage } from '../page-objects/LoginPage';
-import { TEST_ADMIN_CREDENTIALS, TEST_USER_DRUGS, TEST_USER_PATIENTS } from '../common/auth';
+import { LoginPage } from '../../helpers/page-objects/LoginPage';
+import { TEST_ADMIN_CREDENTIALS, TEST_USER_DRUGS, TEST_USER_PATIENTS } from '../../helpers/common/auth';
+
 
 // Helper to login using the page object
 async function loginAs(page: Page, username: string, password: string) {
