@@ -26,11 +26,8 @@ test.describe('API: Admin drug management', () => {
       username: TEST_ADMIN_CREDENTIALS.username,
       password: TEST_ADMIN_CREDENTIALS.password,
     });
-    if (!addResponse.ok()) {
-      const text = await addResponse.text();
-      console.error('Add drug failed:', addResponse.status(), text);
-    }
-    expect(addResponse.ok()).toBeTruthy();
+    // Ensure request succeeded; throws with response body on failure
+    await service.jsonOrThrow(addResponse);
 
     // Fetch all drugs and get the last one (assume it's the one just added)
     const getAllResponse = await service.getAllDrugs({

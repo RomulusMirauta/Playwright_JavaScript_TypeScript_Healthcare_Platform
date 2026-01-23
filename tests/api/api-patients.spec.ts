@@ -28,11 +28,8 @@ test.describe('API: Admin patient management', () => {
       username: TEST_ADMIN_CREDENTIALS.username,
       password: TEST_ADMIN_CREDENTIALS.password,
     });
-    if (!addResponse.ok()) {
-      const text = await addResponse.text();
-      console.error('Add patient failed:', addResponse.status(), text);
-    }
-    expect(addResponse.ok()).toBeTruthy();
+    // Ensure the add request succeeded; throws with body on failure
+    await service.jsonOrThrow(addResponse);
 
     // Fetch all patients and get the last one (assume it's the one just added)
     const getAllResponse = await service.getAllPatients({

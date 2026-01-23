@@ -77,7 +77,7 @@ This project was developed as a sample for healthcare platform test automation. 
    npm install
    ```
 
-2. Configure your database connection in `tests/db-utils.ts` (update user, password, server, and database as needed).
+2. Configure your database connection in `tests/utils/db-utils.ts` (update user, password, server, and database as needed).
 
 <br>
 
@@ -147,7 +147,7 @@ This project was developed as a sample for healthcare platform test automation. 
 
 These options are defined in `playwright.config.ts` and affect test runs globally.
 
-- Use `tests/db-utils.ts` to query your SQL database in tests.
+- Use `tests/utils/db-utils.ts` to query your SQL database in tests.
 - Add more `.spec.ts` files in the `tests/` folder for additional test cases.
 - Test data and credentials are for demonstration only. Do not use in production!
 
