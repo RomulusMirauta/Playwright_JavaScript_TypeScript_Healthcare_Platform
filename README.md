@@ -83,17 +83,55 @@ This project was developed as a sample for healthcare platform test automation. 
 
 ## V. Running Tests
 
-- Run all tests:
+- Run all tests (unheaded - default):
 
   ```sh
   npx playwright test
   ```
 
-- Run a specific test:
+- Run all tests (headed - visible browsers):
+
+  ```sh
+  npx playwright test --headed
+  ```
+
+- Run a specific test file:
 
   ```sh
   npx playwright test tests/end-to-end/e2e-drugs.spec.ts
   ```
+
+- Run a specific test file in headed mode:
+
+  ```sh
+  npx playwright test tests/end-to-end/e2e-drugs.spec.ts --headed
+  ```
+
+    - ***OR***
+
+  ```sh
+  npx playwright test e2e-drugs.spec.ts --headed
+  ```
+
+- Run a single test by test name (title / pattern):
+
+  ```sh
+  npx playwright test -g "add, check, and remove drug"
+  ```
+
+- Run a single test by line number (runs the test at that file line):
+
+  ```sh
+  npx playwright test tests/api/api-drugs.spec.ts:12
+  ```
+
+- Debugging & interactive mode:
+
+  ```sh
+  npx playwright test --debug
+  ```
+
+> Tip: you can also use `test.only(...)` in a spec to run a single test during development.
 
 <br>
 

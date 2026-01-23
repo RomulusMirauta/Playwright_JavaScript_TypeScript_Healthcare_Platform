@@ -41,5 +41,11 @@ test('E2E: add and remove drug (UI + DB check)', async ({ page }) => {
     .input('name', sql.VarChar, drugData.name)
     .query('SELECT * FROM Drugs WHERE Name = @name');
   expect(result.recordset.length).toBe(0);
+
+    // Keep the test runner alive for inspection *(to be removed in production)*
+    // while (true) {
+    //   await new Promise(r => setTimeout(r, 99999999));
+    // }
+
   await pool.close();
 });

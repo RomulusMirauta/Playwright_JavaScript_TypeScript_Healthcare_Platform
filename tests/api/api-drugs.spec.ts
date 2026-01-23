@@ -1,6 +1,6 @@
 import { test, expect, request, APIRequestContext } from '@playwright/test';
 import { TEST_ADMIN_CREDENTIALS } from '../common/auth';
-import { DrugsService } from './services/drugs.service';
+import { DrugsService } from '../services/drugs.service';
 
 const baseUrl = 'http://localhost:3001/';
 
@@ -65,6 +65,12 @@ test.describe('API: Admin drug management', () => {
       (d.drugId || d.DrugID || d.id) === drugId
     );
     expect(stillExists).toBeFalsy();
+
+    // Keep the test runner alive for inspection *(to be removed in production)*
+    // while (true) {
+    //   await new Promise(r => setTimeout(r, 1000));
+    // }
+
   });
 
   test.afterAll(async () => {
