@@ -137,6 +137,16 @@ This project was developed as a sample for healthcare platform test automation. 
 
 ## VI. Notes
 
+### Playwright configuration (`playwright.config.ts`)
+
+- **Global timeout** — set with `timeout: 30000` (milliseconds). The global config timeout has higher priority than per-test timeouts set inside individual spec files, so configure it carefully when debugging or running long-running tests.
+- **Retries** — control with `retries: <n>` to re-run flaky tests automatically.
+- **Reporter** — configure reporters (e.g., HTML) via the `reporter` option, e.g. `reporter: [['html', { open: 'always' }]]`.
+- **Parallel execution** — control with `workers: <n>` to run tests in parallel across multiple workers.
+- **Browsers / projects** — define which browser engines to run using the `projects` array (e.g., `chromium`, `firefox`, `webkit`).
+
+These options are defined in `playwright.config.ts` and affect test runs globally.
+
 - Use `tests/db-utils.ts` to query your SQL database in tests.
 - Add more `.spec.ts` files in the `tests/` folder for additional test cases.
 - Test data and credentials are for demonstration only. Do not use in production!
