@@ -20,6 +20,11 @@ export class PatientsService {
     return this.apiContext.delete(`${this.baseUrl}api/patients/${id}${q}`);
   }
 
+  async getPatient(id: number | string, creds: { username: string; password: string }) {
+    const q = `?username=${encodeURIComponent(creds.username)}&password=${encodeURIComponent(creds.password)}`;
+    return this.apiContext.get(`${this.baseUrl}api/patients/${id}${q}`);
+  }
+
   async jsonOrThrow(response: APIResponse) {
     if (!response.ok()) {
       const body = await response.text();

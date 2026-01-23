@@ -21,6 +21,11 @@ export class DrugsService {
     return this.apiContext.delete(`${this.baseUrl}api/drugs/${id}${q}`);
   }
 
+  async getDrug(id: number | string, creds: { username: string; password: string }) {
+    const q = `?username=${encodeURIComponent(creds.username)}&password=${encodeURIComponent(creds.password)}`;
+    return this.apiContext.get(`${this.baseUrl}api/drugs/${id}${q}`);
+  }
+
   async jsonOrThrow(response: APIResponse) {
     if (!response.ok()) {
       const body = await response.text();

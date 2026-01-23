@@ -18,6 +18,7 @@ Table of Contents
 - [III. Prerequisites](#iii-prerequisites)
 - [IV. Setup](#iv-setup)
 - [V. Running Tests](#v-running-tests)
+  - [Tests directory](#tests-directory)
 - [VI. Notes](#vi-notes)
   - [Environment variables / secrets](#environment-variables--secrets)
 - [VII. CI Integration](#vii-ci-integration)
@@ -132,6 +133,10 @@ This project was developed as a sample for healthcare platform test automation. 
   ```
 
 > Tip: you can also use `test.only(...)` in a spec to run a single test during development.
+
+## Tests directory
+
+For details about the test structure, fixtures and helper utilities see `tests/README.md`.
 
 ### Preflight (first run)
 

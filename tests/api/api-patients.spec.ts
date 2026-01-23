@@ -1,6 +1,7 @@
 import { test, expect, request, APIRequestContext } from '@playwright/test';
 import { TEST_ADMIN_CREDENTIALS } from '../helpers/common/auth';
 import { PatientsService } from '../helpers/services/patients.service';
+import { extractId } from '../helpers/utils/extract-id';
 
 
 const baseUrl = 'http://localhost:3001/';
@@ -17,7 +18,7 @@ const patientData = {
 test.describe('API: Admin patient management', () => {
   let apiContext: APIRequestContext;
   let service: PatientsService;
-  let patientId: number | undefined;
+  let patientId: number | string | undefined;
 
   test.beforeAll(async ({ playwright }) => {
     apiContext = await request.newContext();
@@ -29,23 +30,32 @@ test.describe('API: Admin patient management', () => {
       username: TEST_ADMIN_CREDENTIALS.username,
       password: TEST_ADMIN_CREDENTIALS.password,
     });
-    // Ensure the add request succeeded; throws with body on failure
-    await service.jsonOrThrow(addResponse);
+    // Get the created object from the add response (may not include id) and assert details
+    const created = await service.jsonOrThrow(addResponse);
+    expect(created).toBeTruthy();
 
-    // Fetch all patients and get the last one (assume it's the one just added)
-    const getAllResponse = await service.getAllPatients({
-      username: TEST_ADMIN_CREDENTIALS.username,
-      password: TEST_ADMIN_CREDENTIALS.password,
-    });
-    const allPatients = await service.jsonOrThrow(getAllResponse);
-    const lastPatient = allPatients[allPatients.length - 1];
-    expect(lastPatient).toBeTruthy();
-    patientId = lastPatient.patientId || lastPatient.PatientID || lastPatient.id;
+    // Prefer id from created response, but fall back to searching the list for a matching record
+    patientId = extractId(created);
+    let source = created as any;
+    if (!patientId) {
+      const getAll = await service.getAllPatients({
+        username: TEST_ADMIN_CREDENTIALS.username,
+        password: TEST_ADMIN_CREDENTIALS.password,
+      });
+      const all = await service.jsonOrThrow(getAll);
+      const found = all.find((p: any) =>
+        (p.firstName || p.FirstName) === patientData.firstName &&
+        (p.lastName || p.LastName) === patientData.lastName
+      );
+      expect(found).toBeTruthy();
+      source = found;
+      patientId = extractId(found);
+    }
     expect(patientId).toBeTruthy();
 
-    // Check if patient was added (validate details from the list)
-    expect(lastPatient.firstName || lastPatient.FirstName).toBe(patientData.firstName);
-    expect(lastPatient.lastName || lastPatient.LastName).toBe(patientData.lastName);
+    // Validate details from the created or found resource
+    expect(source.firstName || source.FirstName).toBe(patientData.firstName);
+    expect(source.lastName || source.LastName).toBe(patientData.lastName);
 
     // Remove patient
     const delResponse = await service.deletePatient(patientId!, {
@@ -54,16 +64,12 @@ test.describe('API: Admin patient management', () => {
     });
     expect(delResponse.ok()).toBeTruthy();
 
-    // Fetch all patients again and check patient is removed
-    const getAllAfterDelete = await service.getAllPatients({
+    // Verify deletion by attempting to GET the deleted patient
+    const getAfterDelete = await service.getPatient(patientId!, {
       username: TEST_ADMIN_CREDENTIALS.username,
       password: TEST_ADMIN_CREDENTIALS.password,
     });
-    const patientsAfterDelete = await service.jsonOrThrow(getAllAfterDelete);
-    const stillExists = patientsAfterDelete.some((p: any) =>
-      (p.patientId || p.PatientID || p.id) === patientId
-    );
-    expect(stillExists).toBeFalsy();
+    expect(getAfterDelete.ok()).toBeFalsy();
   });
 
   test.afterAll(async () => {
