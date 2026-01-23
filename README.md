@@ -133,7 +133,42 @@ This project was developed as a sample for healthcare platform test automation. 
 
 > Tip: you can also use `test.only(...)` in a spec to run a single test during development.
 
-<br>
+### Preflight (first run)
+
+- Install Playwright browser binaries (required once):
+
+  ```sh
+  npx playwright install
+  ```
+
+- Ensure the application under test is running at `BASE_URL` (default `http://localhost:3001/`) or set `BASE_URL` env var before running tests.
+
+### Test structure (where to put code)
+
+- `tests/common/` — shared config and constants (auth, config).
+- `tests/fixtures/` — custom Playwright fixtures and test data.
+- `tests/page-objects/` — UI page objects (POM classes).
+- `tests/services/` — API client helpers (service classes).
+- `tests/utils/` — misc helpers (DB query helpers, etc.).
+
+### Artifacts & debugging
+
+- HTML report: `npx playwright show-report` (the HTML reporter opens after `npx playwright test` if configured).
+- Collect trace/screenshot/video on failures using config or CLI flags, e.g. `--trace=on`, inspect traces with Playwright Trace Viewer.
+
+### Useful npm scripts (add if desired)
+
+```json
+{ "test:ui": "npx playwright test && npx playwright show-report",
+  "test:headed": "npx playwright test --headed",
+  "test:chrome": "npx playwright test --project=chromium",
+  "typecheck": "npx tsc --noEmit" }
+```
+
+### CI notes
+
+- Use the `.github/workflows/playwright.yml` example for GitHub Actions. Configure required secrets and pass env vars (DB, test creds) via repository secrets.
+- For CI, run `npx playwright install --with-deps` on the job runner before tests.
 
 ## VI. Notes
 
