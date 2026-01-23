@@ -4,9 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-  "test": "echo \"Error: no test specified\" && exit 1",
-  "test:ui": "npx playwright test && npx playwright show-report",
-  "validate-env": "node ./scripts/validate-env.js"
+    "pretest:install": "npx playwright install --with-deps",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "test:ui": "npx playwright test && npx playwright show-report",
+    "test:headed": "npx playwright test --headed",
+    "test:chrome": "npx playwright test --project=chromium",
+    "typecheck": "npx tsc --noEmit",
+    "validate-env": "node ./scripts/validate-env.js"
   },
   "keywords": [],
   "author": "",
