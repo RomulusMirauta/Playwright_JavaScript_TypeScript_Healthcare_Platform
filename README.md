@@ -13,16 +13,22 @@ A sample healthcare test automation project using Playwright for End-to-End, API
 Table of Contents
 </h2>
 
-I. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Project Overview](#i-project-overview) <br>
-II. &nbsp;&nbsp;&nbsp;&nbsp;[Main Features](#ii-main-features) <br>
-III. &nbsp;&nbsp;&nbsp;[Prerequisites](#iii-prerequisites) <br>
-IV. &nbsp;&nbsp;&nbsp;[Setup](#iv-setup) <br>
-V. &nbsp;&nbsp;&nbsp;&nbsp;[Running Tests](#v-running-tests) <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; V. a. &nbsp;[Tests directory](#tests-directory) <br>
+I. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [Project Overview](#i-project-overview) <br>
+II. &nbsp;&nbsp;&nbsp;&nbsp; [Main Features](#ii-main-features) <br>
+III. &nbsp;&nbsp;&nbsp; [Prerequisites](#iii-prerequisites) <br>
+IV. &nbsp;&nbsp;&nbsp; [Setup](#iv-setup) <br>
+V. &nbsp;&nbsp;&nbsp;&nbsp; [Running Tests](#v-running-tests) <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; V. a. &nbsp; [Tests directory](#v-a-tests-directory) <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; V. b. &nbsp; [Preflight (first run)](#v-b-preflight-first-run) <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; V. c. &nbsp; [Test structure (where to put code)](#v-c-test-structure-where-to-put-code) <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; V. d. &nbsp; [Artifacts & debugging](#v-d-artifacts--debugging) <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; V. e. &nbsp; [Useful npm scripts (add if desired)](#v-e-useful-npm-scripts-add-if-desired) <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; V. f. &nbsp;&nbsp; [CI notes](#v-f-ci-notes) <br>
 VI. &nbsp;&nbsp;&nbsp;[Notes](#vi-notes) <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;VI. a. &nbsp;[Environment variables / secrets](#environment-variables--secrets) <br>
-VII. &nbsp;&nbsp;[CI Integration](#vii-ci-integration) <br>
-VIII. &nbsp;[Main Technologies Used](#viii-main-technologies-used) <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; VI. a. &nbsp; [Playwright configuration](#vi-a-playwright-configuration-playwrightconfigts) <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; VI. b. &nbsp; [Environment variables / secrets](#vi-b-environment-variables--secrets) <br>
+VII. &nbsp;&nbsp; [CI Integration](#vii-ci-integration) <br>
+VIII. &nbsp; [Main Technologies Used](#viii-main-technologies-used) <br>
 IX. &nbsp;&nbsp; [SW Info](#ix-sw-info) <br>
 X. &nbsp;&nbsp;&nbsp; [Screenshots](#x-screenshots) <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; X. a. &nbsp;[Playwright in Visual Studio Code](#playwright-in-visual-studio-code) <br>
@@ -134,12 +140,11 @@ This project was developed as a sample for healthcare platform test automation. 
 
 > Tip: you can also use `test.only(...)` in a spec to run a single test during development.
 
-## Tests directory
+## V. a. Tests directory
 
 For details about the test structure, fixtures and helper utilities see `tests/README.md`.
 
-### Preflight (first run)
-
+### V. b. Preflight (first run)
 - Install Playwright browser binaries (required once):
 
   ```sh
@@ -148,7 +153,7 @@ For details about the test structure, fixtures and helper utilities see `tests/R
 
 - Ensure the application under test is running at `BASE_URL` (default `http://localhost:3001/`) or set `BASE_URL` env var before running tests.
 
-### Test structure (where to put code)
+### V. c. Test structure (where to put code)
 
 - `tests/common/` — shared config and constants (auth, config).
 - `tests/fixtures/` — custom Playwright fixtures and test data.
@@ -156,12 +161,12 @@ For details about the test structure, fixtures and helper utilities see `tests/R
 - `tests/services/` — API client helpers (service classes).
 - `tests/utils/` — misc helpers (DB query helpers, etc.).
 
-### Artifacts & debugging
+### V. d. Artifacts & debugging
 
 - HTML report: `npx playwright show-report` (the HTML reporter opens after `npx playwright test` if configured).
 - Collect trace/screenshot/video on failures using config or CLI flags, e.g. `--trace=on`, inspect traces with Playwright Trace Viewer.
 
-### Useful npm scripts (add if desired)
+### V. e. Useful npm scripts (add if desired)
 
 ```json
 { "test:ui": "npx playwright test && npx playwright show-report",
@@ -170,14 +175,14 @@ For details about the test structure, fixtures and helper utilities see `tests/R
   "typecheck": "npx tsc --noEmit" }
 ```
 
-### CI notes
+### V. f. CI notes
 
 - Use the `.github/workflows/playwright.yml` example for GitHub Actions. Configure required secrets and pass env vars (DB, test creds) via repository secrets.
 - For CI, run `npx playwright install --with-deps` on the job runner before tests.
 
 ## VI. Notes
 
-### Playwright configuration (`playwright.config.ts`)
+### VI. a. Playwright configuration (`playwright.config.ts`) 
 
 - **Global timeout** — set with `timeout: 30000` (milliseconds). The global config timeout has higher priority than per-test timeouts set inside individual spec files, so configure it carefully when debugging or running long-running tests.
 - **Retries** — control with `retries: <n>` to re-run flaky tests automatically.
@@ -191,7 +196,7 @@ These options are defined in `playwright.config.ts` and affect test runs globall
 - Add more `.spec.ts` files in the `tests/` folder for additional test cases.
 - Test data and credentials are for demonstration only. Do not use in production!
 
-### Environment variables / secrets
+### VI. b. Environment variables / secrets
 
 The tests read sensitive values from environment variables. Set these in your shell or CI secrets before running tests.
 
@@ -235,14 +240,14 @@ This project includes GitHub Actions integration for automated test runs. See th
 
 ## X. Screenshots
 
-### Playwright in Visual Studio Code
+### X. a. Playwright in Visual Studio Code
 
 ![Azure](screenshots/Playwright-VS-Code.png)
 
-### Playwright HTML Report
+### X. b. Playwright HTML Report
 
 ![Azure](screenshots/Playwright-HTML-Report.png)
 
-### GitHub Actions - CI Integration - Workflow Example
+### X. c. GitHub Actions - CI Integration - Workflow Example
 
 ![Azure](screenshots/GitHub-Actions.png)
