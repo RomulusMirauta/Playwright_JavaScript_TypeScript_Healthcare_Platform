@@ -13,21 +13,21 @@ A sample healthcare test automation project using Playwright for End-to-End, API
 Table of Contents
 </h2>
 
-- [I. Project Overview](#i-project-overview)
-- [II. Main Features](#ii-main-features)
-- [III. Prerequisites](#iii-prerequisites)
-- [IV. Setup](#iv-setup)
-- [V. Running Tests](#v-running-tests)
-  - [Tests directory](#tests-directory)
-- [VI. Notes](#vi-notes)
-  - [Environment variables / secrets](#environment-variables--secrets)
-- [VII. CI Integration](#vii-ci-integration)
-- [VIII. Main Technologies Used](#viii-main-technologies-used)
-- [IX. SW Info](#ix-sw-info)
-- [X. Screenshots](#x-screenshots)
-  - [Playwright in Visual Studio Code](#playwright-in-visual-studio-code)
-  - [Playwright HTML Report](#playwright-html-report)
-  - [GitHub Actions - CI Integration - Workflow Example](#github-actions---ci-integration---workflow-example)
+I. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Project Overview](#i-project-overview) <br>
+II. &nbsp;&nbsp;&nbsp;&nbsp;[Main Features](#ii-main-features) <br>
+III. &nbsp;&nbsp;&nbsp;[Prerequisites](#iii-prerequisites) <br>
+IV. &nbsp;&nbsp;&nbsp;[Setup](#iv-setup) <br>
+V. &nbsp;&nbsp;&nbsp;&nbsp;[Running Tests](#v-running-tests) <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; V. a. &nbsp;[Tests directory](#tests-directory) <br>
+VI. &nbsp;&nbsp;&nbsp;[Notes](#vi-notes) <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;VI. a. &nbsp;[Environment variables / secrets](#environment-variables--secrets) <br>
+VII. &nbsp;&nbsp;[CI Integration](#vii-ci-integration) <br>
+VIII. &nbsp;[Main Technologies Used](#viii-main-technologies-used) <br>
+IX. &nbsp;&nbsp; [SW Info](#ix-sw-info) <br>
+X. &nbsp;&nbsp;&nbsp; [Screenshots](#x-screenshots) <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; X. a. &nbsp;[Playwright in Visual Studio Code](#playwright-in-visual-studio-code) <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; X. b. &nbsp;[Playwright HTML Report](#playwright-html-report) <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; X. c. &nbsp;[GitHub Actions - CI Integration - Workflow Example](#github-actions---ci-integration---workflow-example) <br>
 
 <br>
 
