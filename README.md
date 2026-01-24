@@ -2,10 +2,12 @@
 Sample Test Automation<br>Playwright + JavaScript/TypeScript + SQL
 </h1>
 
+<br>
 
-<p align="center">
-A sample healthcare test automation project using Playwright for End-to-End, API and multi-browser Compatibility testing, with SQL Server integration.<br>This project demonstrates automated UI and API tests for a healthcare platform with user authentication, role-based access, and management of patients and drugs.
-</p>
+<p align="center"><i>
+A sample healthcare test automation project using Playwright for End-to-End, API and multi-browser Compatibility testing, with SQL Server integration.<br><br>
+This project demonstrates automated UI and API tests for a healthcare platform with user authentication, role-based access, and management of patients and drugs.
+</i></p>
 
 <br>
 
