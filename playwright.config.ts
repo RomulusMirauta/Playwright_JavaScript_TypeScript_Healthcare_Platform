@@ -10,6 +10,7 @@ export default defineConfig({
     screenshot: 'only-on-failure',
     video: 'retain-on-failure',
     baseURL: 'http://localhost:3001/',
+    // viewport: null, // for fullscreen
   },
   workers: 12, // Enables parallel test execution with 12 workers
   projects: [
