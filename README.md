@@ -25,7 +25,7 @@ V. &nbsp;&nbsp;&nbsp;&nbsp; [Running Tests](#v-running-tests) <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; V. c. &nbsp; [Test structure (where to put code)](#v-c-test-structure-where-to-put-code) <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; V. d. &nbsp; [Artifacts & debugging](#v-d-artifacts--debugging) <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; V. e. &nbsp; [Useful npm scripts (add if desired)](#v-e-useful-npm-scripts-add-if-desired) <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; V. f. &nbsp;&nbsp; [CI notes](#v-f-ci-notes) <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; V. f. &nbsp;&nbsp; [CI info](#v-f-ci-notes) <br>
 VI. &nbsp;&nbsp;&nbsp; [Notes](#vi-notes) <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; VI. a. &nbsp; [Playwright configuration](#vi-a-playwright-configuration-playwrightconfigts) <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; VI. b. &nbsp; [Environment variables / secrets](#vi-b-environment-variables--secrets) <br>
@@ -177,7 +177,7 @@ For details about the test structure, fixtures and helper utilities see `tests/R
   "typecheck": "npx tsc --noEmit" }
 ```
 
-### V. f. CI notes
+### V. f. CI info
 
 - Use the `.github/workflows/playwright.yml` example for GitHub Actions. Configure required secrets and pass env vars (DB, test creds) via repository secrets.
 - For CI, run `npx playwright install --with-deps` on the job runner before tests.
