@@ -51,7 +51,7 @@ This repository contains Playwright-based test automation for a sample healthcar
 
 The tests cover both UI and API functionality, and include database validation using direct SQL queries.
 
-The Test Object is available here: [SampleTestObject1](https://github.com/RomulusMirauta/SampleTestObject1).
+The Test Object is available here: [Healthcare_Platform_SampleTestObject1](https://github.com/RomulusMirauta/Healthcare_Platform_SampleTestObject1).
 
 This project was developed as a sample for healthcare platform test automation. It was inspired by full-stack healthcare platform projects and built with the help of GitHub Copilot  (model GPT-4.1).
 
