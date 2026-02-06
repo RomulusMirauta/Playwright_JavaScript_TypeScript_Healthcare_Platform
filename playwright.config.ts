@@ -2,7 +2,7 @@ import { defineConfig, devices } from '@playwright/test';
 
 export default defineConfig({
   testDir: './tests',
-  testMatch: 'test.ts', // Use custom test entry for global delay
+  // testMatch reverted; use default test discovery
   timeout: 30000,
   retries: 0,
   reporter: [['html', { open: 'always' }]],
@@ -17,7 +17,7 @@ export default defineConfig({
       slowMo: 500, // slows actions by 500ms for demo recording
     },
   },
-  workers: 12, // Enables parallel test execution with 12 workers
+  workers: 1, // Enables parallel test execution with 12 workers
   projects: [
     {
       name: 'chromium',

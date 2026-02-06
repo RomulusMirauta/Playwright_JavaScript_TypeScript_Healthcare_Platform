@@ -1,11 +1,9 @@
-import { test as base } from '@playwright/test';
+import { test as base, expect as baseExpect } from '@playwright/test';
 
-export const test = base.extend({
-  // Add a delay before each test
-  beforeEach: async ({}, use) => {
-    await new Promise(resolve => setTimeout(resolve, 1000)); // 1 second delay
-    await use();
-  },
+// Add a delay before each test
+base.beforeEach(async () => {
+  await new Promise(resolve => setTimeout(resolve, 1000)); // 1 second delay
 });
 
-export const expect = base.expect;
+export const test = base;
+export const expect = baseExpect;
