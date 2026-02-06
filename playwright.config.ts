@@ -11,13 +11,13 @@ export default defineConfig({
     screenshot: 'only-on-failure',
     video: 'retain-on-failure',
     baseURL: 'http://localhost:3001/',
-    viewport: null, // makes default for headed testing to be fullscreen
+    // viewport: null, // makes default for headed testing to be fullscreen
     launchOptions: {
       args: ['--start-maximized'],
       slowMo: 500, // slows actions by 500ms for demo recording
     },
   },
-  workers: 1, // Enables parallel test execution with 12 workers
+  workers: 12, // Enables parallel test execution with 12 workers
   projects: [
     {
       name: 'chromium',
