@@ -104,6 +104,12 @@ This project was developed as a sample for healthcare platform test automation. 
   npx playwright test --headed
   ```
 
+- Run all tests (headed, in fullscreen - for recording demos):
+
+  ```sh
+  npx playwright test --headed
+  ```
+
 - Run a specific test file:
 
   ```sh
