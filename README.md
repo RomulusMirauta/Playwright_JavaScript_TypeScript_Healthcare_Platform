@@ -33,9 +33,9 @@ VII. &nbsp;&nbsp; [CI Integration](#vii-ci-integration) <br>
 VIII. &nbsp; [Main Technologies Used](#viii-main-technologies-used) <br>
 IX. &nbsp;&nbsp; [SW Info](#ix-sw-info) <br>
 X. &nbsp;&nbsp;&nbsp; [Screenshots](#x-screenshots) <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; X. a. &nbsp;[Playwright in Visual Studio Code](#playwright-in-visual-studio-code) <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; X. b. &nbsp;[Playwright HTML Report](#playwright-html-report) <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; X. c. &nbsp;[GitHub Actions - CI Integration - Workflow Example](#github-actions---ci-integration---workflow-example) <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; X. a. &nbsp;[Playwright in Visual Studio Code](#x-a-playwright-in-visual-studio-code) <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; X. b. &nbsp;[Playwright HTML Report](#x-b-playwright-html-report) <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; X. c. &nbsp;[GitHub Actions - CI Integration - Workflow Example](#x-c-github-actions---ci-integration---workflow-example) <br>
 
 <br>
 
