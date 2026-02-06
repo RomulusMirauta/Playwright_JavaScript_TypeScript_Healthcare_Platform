@@ -26,7 +26,7 @@ V. &nbsp;&nbsp;&nbsp;&nbsp; [Running Tests](#v-running-tests) <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; V. d. &nbsp; [Artifacts & debugging](#v-d-artifacts--debugging) <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; V. e. &nbsp; [Useful npm scripts (add if desired)](#v-e-useful-npm-scripts-add-if-desired) <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; V. f. &nbsp;&nbsp; [CI notes](#v-f-ci-notes) <br>
-VI. &nbsp;&nbsp;&nbsp;[Notes](#vi-notes) <br>
+VI. &nbsp;&nbsp;&nbsp;&nbsp; [Notes](#vi-notes) <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; VI. a. &nbsp; [Playwright configuration](#vi-a-playwright-configuration-playwrightconfigts) <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; VI. b. &nbsp; [Environment variables / secrets](#vi-b-environment-variables--secrets) <br>
 VII. &nbsp;&nbsp; [CI Integration](#vii-ci-integration) <br>
