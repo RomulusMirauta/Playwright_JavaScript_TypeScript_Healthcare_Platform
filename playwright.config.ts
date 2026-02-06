@@ -2,6 +2,7 @@ import { defineConfig, devices } from '@playwright/test';
 
 export default defineConfig({
   testDir: './tests',
+  testMatch: 'test.ts', // Use custom test entry for global delay
   timeout: 30000,
   retries: 0,
   reporter: [['html', { open: 'always' }]],
