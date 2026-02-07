@@ -42,6 +42,44 @@ XI. &nbsp;&nbsp;&nbsp; [Screenshots](#xi-screenshots) <br>
 
 ## I. Demos
 
+Demo recordings of Playwright test runs can be found in the `media/demos/` folder.
+
+- To view a demo, open the corresponding video file in the `media/demos/` directory.
+- These demos showcase:
+  - Fullscreen UI test execution
+  - Delayed actions for clear step-by-step visibility
+  - Example flows for login, CRUD operations, and role-based access
+
+> Tip: You can record your own demos by running tests in headed mode with slow motion enabled (see the Playwright config and README instructions).
+
+
+<br><br>
+
+
+### I. a. Automated Tests
+*(Headed Testing on Google Chrome)* <br>
+
+showcasing the tremendous speed of Playwright test execution
+
+![DemoPlaywrightChromiumFast_orig.gif](media/demos/DemoPlaywrightChromiumFast_orig.gif) <br><br>
+
+![DemoPlaywrightChromiumFirefoxWebkitFast_orig.gif](media/demos/DemoPlaywrightChromiumFirefoxWebkitFast_orig.gif) <br><br>
+
+
+### I. b. Visual Studio Code & CLI
+*(Behind-logic example, structure and running tests from command line)* <br>
+
+slowed down execution for clear visibility of test execution steps, only 1 worker to show sequential execution (no parallel execution), sequential vs parallel
+![DemoPlaywrightChromiumSlow_orig.gif](media/demos/DemoPlaywrightChromiumSlow_orig.gif) <br><br>
+
+
+VS Code test execution with Playwright Test Runner, showing test structure and running tests from the CLI
+![DemoVSCodeChromiumFirefoxWebkitFast_orig.gif](media/demos/DemoVSCodeChromiumFirefoxWebkitFast_orig.gif) <br><br>
+
+
+<br><br>
+
+
 ## II. Project Overview
 
 This repository contains Playwright-based test automation for a sample healthcare platform. The platform includes:
@@ -247,11 +285,11 @@ This project includes GitHub Actions integration for automated test runs. See th
 
 ### XI. a. Playwright in Visual Studio Code
 
-![Azure](screenshots/Playwright-VS-Code.png)
+![Azure](media/screenshots/Playwright-VS-Code.png)
 
 ### XI. b. Playwright HTML Report
-![Azure](screenshots/Playwright-HTML-Report.png)
+![Azure](media/screenshots/Playwright-HTML-Report.png)
 
 ### XI. c. GitHub Actions - CI Integration - Workflow Example
 
-![Azure](screenshots/GitHub-Actions.png)
+![Azure](media/screenshots/GitHub-Actions.png)
