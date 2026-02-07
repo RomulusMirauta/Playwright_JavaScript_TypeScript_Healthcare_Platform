@@ -16,6 +16,12 @@ Table of Contents
 </h2>
 
 I. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [Demos](#i-demos) <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; I. a. &nbsp; [Automated Tests - Playwright](#i-a-automated-tests---playwright) <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; I. a. i. &nbsp; [Playwright — Chromium (Slow)](media/demos/DemoPlaywrightChromiumSlow_orig.gif) <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; I. a. ii. &nbsp; [Playwright — Chromium (Fast)](media/demos/DemoPlaywrightChromiumFast_orig.gif) <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; I. a. iii. &nbsp; [Playwright — Chromium/Firefox/WebKit (Fast)](media/demos/DemoPlaywrightChromiumFirefoxWebkitFast_orig.gif) <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; I. b. &nbsp; [Visual Studio Code - UI & CLI](#i-b-visual-studio-code---ui--cli) <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; I. b. i. &nbsp; [VSCode demo — Playwright (Fast)](media/demos/DemoVSCodeChromiumFirefoxWebkitFast_orig.gif) <br>
 II. &nbsp;&nbsp;&nbsp;&nbsp; [Project Overview](#ii-project-overview) <br>
 III. &nbsp;&nbsp;&nbsp; [Main Features](#iii-main-features) <br>
 IV. &nbsp;&nbsp;&nbsp; [Prerequisites](#iv-prerequisites) <br>
