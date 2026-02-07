@@ -51,31 +51,7 @@ Demo recordings of Playwright test runs can be found in the `media/demos/` folde
   - Delayed actions for clear step-by-step visibility
   - Example flows for login, CRUD operations, and role-based access
 
-> Tip: You can record your own demos by running tests in headed mode with slow motion enabled (see the Playwright config and README instructions).
-
-How to enable slow motion
-
-- Edit `playwright.config.ts` and add a `slowMo` value to the `use.launchOptions` block (milliseconds). Example:
-
-```typescript
-use: {
-  viewport: null,
-  launchOptions: {
-    args: ['--start-maximized'],
-    slowMo: 500, // slow actions by 500ms for demo recording
-  },
-},
-```
-
-- Run tests in headed mode to see the browser UI and the slowed actions:
-
-```bash
-npx playwright test --headed
-```
-
-- Notes:
-  - `slowMo` delays Playwright's automation actions (clicks, navigation, typing), making recordings clearer.
-  - For one-off pauses inside tests use `await page.waitForTimeout(ms)`.
+> Tip: You can record your own demos by running tests in headed mode with slow motion enabled (see the Playwright config and [README instructions](#how-to-enable-slow-motion)).
 
 
 <br>
@@ -262,6 +238,30 @@ These options are defined in `playwright.config.ts` and affect test runs globall
 - Use `tests/utils/db-utils.ts` to query your SQL database in tests.
 - Add more `.spec.ts` files in the `tests/` folder for additional test cases.
 - Test data and credentials are for demonstration only. Do not use in production!
+
+#### How to enable slow motion
+
+- Edit `playwright.config.ts` and add a `slowMo` value to the `use.launchOptions` block (milliseconds). Example:
+
+```typescript
+use: {
+  viewport: null,
+  launchOptions: {
+    args: ['--start-maximized'],
+    slowMo: 500, // slow actions by 500ms for demo recording
+  },
+},
+```
+
+- Run tests in headed mode to see the browser UI and the slowed actions:
+
+```bash
+npx playwright test --headed
+```
+
+- Notes:
+  - `slowMo` delays Playwright's automation actions (clicks, navigation, typing), making recordings clearer.
+  - For one-off pauses inside tests use `await page.waitForTimeout(ms)`.
 
 ### VII. b. Environment variables / secrets
 
