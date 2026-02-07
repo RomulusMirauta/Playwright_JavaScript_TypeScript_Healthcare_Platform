@@ -181,7 +181,9 @@ This project was developed as a sample for healthcare platform test automation. 
 
 > Tip: you can also use `test.only(...)` in a spec to run a single test during development.
 
-## VI. a. Tests directory
+<br>
+
+### VI. a. Tests directory
 
 For details about the test structure, fixtures and helper utilities see `tests/README.md`.
 
@@ -220,6 +222,8 @@ For details about the test structure, fixtures and helper utilities see `tests/R
 
 - Use the `.github/workflows/playwright.yml` example for GitHub Actions. Configure required secrets and pass env vars (DB, test creds) via repository secrets.
 - For CI, run `npx playwright install --with-deps` on the job runner before tests.
+
+<br>
 
 ## VII. Notes
 
