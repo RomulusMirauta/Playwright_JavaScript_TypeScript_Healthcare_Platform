@@ -16,27 +16,27 @@ Table of Contents
 </h2>
 
 I. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [Demos](#i-demos) <br>
-II. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [Project Overview](#ii-project-overview) <br>
-III. &nbsp;&nbsp;&nbsp;&nbsp; [Main Features](#iii-main-features) <br>
+II. &nbsp;&nbsp;&nbsp;&nbsp; [Project Overview](#ii-project-overview) <br>
+III. &nbsp;&nbsp;&nbsp; [Main Features](#iii-main-features) <br>
 IV. &nbsp;&nbsp;&nbsp; [Prerequisites](#iv-prerequisites) <br>
-V. &nbsp;&nbsp;&nbsp; [Setup](#v-setup) <br>
-VI. &nbsp;&nbsp;&nbsp;&nbsp; [Running Tests](#vi-running-tests) <br>
+V. &nbsp;&nbsp;&nbsp;&nbsp; [Setup](#v-setup) <br>
+VI. &nbsp;&nbsp;&nbsp; [Running Tests](#vi-running-tests) <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; VI. a. &nbsp; [Tests directory](#vi-a-tests-directory) <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; VI. b. &nbsp; [Preflight (first run)](#vi-b-preflight-first-run) <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; VI. c. &nbsp; [Test structure (where to put code)](#vi-c-test-structure-where-to-put-code) <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; VI. d. &nbsp; [Artifacts & debugging](#vi-d-artifacts--debugging) <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; VI. e. &nbsp; [Useful npm scripts (add if desired)](#vi-e-useful-npm-scripts-add-if-desired) <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; VI. f. &nbsp;&nbsp; [CI Info](#vi-f-ci-notes) <br>
-VII. &nbsp;&nbsp;&nbsp; [Notes](#vii-notes) <br>
+VII. &nbsp;&nbsp; [Notes](#vii-notes) <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; VII. a. &nbsp; [Playwright configuration](#vii-a-playwright-configuration-playwrightconfigts) <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; VII. b. &nbsp; [Environment variables / secrets](#vii-b-environment-variables--secrets) <br>
-VIII. &nbsp;&nbsp; [CI Integration](#viii-ci-integration) <br>
-IX. &nbsp; [Main Technologies Used](#ix-main-technologies-used) <br>
-X. &nbsp;&nbsp; [SW Info](#x-sw-info) <br>
+VIII. &nbsp; [CI Integration](#viii-ci-integration) <br>
+IX. &nbsp;&nbsp;&nbsp; [Main Technologies Used](#ix-main-technologies-used) <br>
+X. &nbsp;&nbsp;&nbsp;&nbsp; [SW Info](#x-sw-info) <br>
 XI. &nbsp;&nbsp;&nbsp; [Screenshots](#xi-screenshots) <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; XI. a. &nbsp;[Playwright in Visual Studio Code](#xi-a-playwright-in-visual-studio-code) <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; XI. b. &nbsp;[Playwright HTML Report](#xi-b-playwright-html-report) <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; XI. c. &nbsp;[GitHub Actions - CI Integration - Workflow Example](#xi-c-github-actions---ci-integration---workflow-example) <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; XI. a. &nbsp;[Playwright in Visual Studio Code](#xi-a-playwright-in-visual-studio-code) <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; XI. b. &nbsp;[Playwright HTML Report](#xi-b-playwright-html-report) <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; XI. c. &nbsp;[GitHub Actions - CI Integration - Workflow Example](#xi-c-github-actions---ci-integration---workflow-example) <br>
 
 <br>
 
