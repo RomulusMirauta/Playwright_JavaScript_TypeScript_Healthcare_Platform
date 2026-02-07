@@ -56,21 +56,25 @@ Demo recordings of Playwright test runs can be found in the `media/demos/` folde
 <br><br>
 
 
-### I. a. Automated Tests
-*Test execution using Playwright Test Runner in headed mode, showcasing the tremendous speed of test execution - 19 tests, on Chromium, with 12 workers (parallel execution)* <br>
-![DemoPlaywrightChromiumFast_orig.gif](media/demos/DemoPlaywrightChromiumFast_orig.gif) <br><br>
+### I. a. Automated Tests - Playwright
 
-*Running tests using Playwright Test Runner in headed mode, showcasing the tremendous speed of test execution - 57 tests, on Chromium, Firefox and Webkit, with 12 workers (parallel execution)* <br>
-![DemoPlaywrightChromiumFirefoxWebkitFast_orig.gif](media/demos/DemoPlaywrightChromiumFirefoxWebkitFast_orig.gif) <br><br>
+<br>
 
-
-### I. b. Visual Studio Code & CLI
-
-*Headed Testing, slowed down execution for clear visibility of test execution steps - 19 tests, on Chromium, using only 1 worker to show sequential (serial) execution (meaning no parallel execution)* <br>
+#### ***Test execution using Playwright Test Runner in headed mode, slowed down for clear visibility of test execution steps - 19 tests, on Chromium, using only 1 worker to show sequential (serial) execution (meaning no parallel execution)** <br>
 ![DemoPlaywrightChromiumSlow_orig.gif](media/demos/DemoPlaywrightChromiumSlow_orig.gif) <br><br>
 
 
-*(Visual Studio Code - UI & CLI - Behind-logic example, structure and running tests from the CLI)* <br>
+#### ***Headed Testing, showcasing the tremendous speed of test execution - 19 tests, on Chromium, with 12 workers (parallel execution)*** <br>
+![DemoPlaywrightChromiumFast_orig.gif](media/demos/DemoPlaywrightChromiumFast_orig.gif) <br><br>
+
+
+#### ***Running tests using Playwright Test Runner in headed mode, showcasing the tremendous speed of test execution - 57 tests, on Chromium, Firefox and Webkit, with 12 workers (parallel execution)*** <br
+![DemoPlaywrightChromiumFirefoxWebkitFast_orig.gif](media/demos/DemoPlaywrightChromiumFirefoxWebkitFast_orig.gif) <br><br><br>
+
+
+### I. b. Visual Studio Code - UI & CLI
+
+#### ***(Visual Studio Code - UI & CLI - Behind-logic example, structure and running tests from the CLI)*** <br>
 ![DemoVSCodeChromiumFirefoxWebkitFast_orig.gif](media/demos/DemoVSCodeChromiumFirefoxWebkitFast_orig.gif) <br><br>
 
 
