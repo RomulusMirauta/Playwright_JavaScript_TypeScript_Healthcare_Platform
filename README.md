@@ -66,16 +66,11 @@ Demo recordings of Playwright test runs can be found in the `media/demos/` folde
 
 ### I. b. Visual Studio Code & CLI
 
-*Headed Testing, slowed down execution for clear visibility of test execution steps, using only 1 worker to show sequential (serial) execution (no parallel execution), sequential vs parallel- on Chromium, with 1 worker (sequential execution)* <br>
+*Headed Testing, slowed down execution for clear visibility of test execution steps - 19 tests, on Chromium, using only 1 worker to show sequential (serial) execution (meaning no parallel execution)* <br>
 ![DemoPlaywrightChromiumSlow_orig.gif](media/demos/DemoPlaywrightChromiumSlow_orig.gif) <br><br>
 
 
-
-VS Code test execution with Playwright Test Runner, showing test structure and running tests from the CLI
-
-
 *(Visual Studio Code - UI & CLI - Behind-logic example, structure and running tests from the CLI)* <br>
-
 ![DemoVSCodeChromiumFirefoxWebkitFast_orig.gif](media/demos/DemoVSCodeChromiumFirefoxWebkitFast_orig.gif) <br><br>
 
 
