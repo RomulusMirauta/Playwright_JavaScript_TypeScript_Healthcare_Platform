@@ -59,8 +59,6 @@ Demo recordings of Playwright test runs can be found in the `media/demos/` folde
 
 ### I. a. Automated Tests - Playwright
 
-<br>
-
 #### ***Test execution using Playwright Test Runner in headed mode, slowed down for clear visibility of test execution steps - 19 tests, on Chromium, using only 1 worker to show sequential (serial) execution (meaning no parallel execution)*** <br>
 ![DemoPlaywrightChromiumSlow_orig.gif](media/demos/DemoPlaywrightChromiumSlow_orig.gif) <br><br>
 
