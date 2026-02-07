@@ -17,11 +17,7 @@ Table of Contents
 
 I. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [Demos](#i-demos) <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; I. a. &nbsp; [Automated Tests - Playwright](#i-a-automated-tests---playwright) <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; I. a. i. &nbsp; [Playwright — Chromium (Slow)](media/demos/DemoPlaywrightChromiumSlow_orig.gif) <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; I. a. ii. &nbsp; [Playwright — Chromium (Fast)](media/demos/DemoPlaywrightChromiumFast_orig.gif) <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; I. a. iii. &nbsp; [Playwright — Chromium/Firefox/WebKit (Fast)](media/demos/DemoPlaywrightChromiumFirefoxWebkitFast_orig.gif) <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; I. b. &nbsp; [Visual Studio Code - UI & CLI](#i-b-visual-studio-code---ui--cli) <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; I. b. i. &nbsp; [VSCode demo — Playwright (Fast)](media/demos/DemoVSCodeChromiumFirefoxWebkitFast_orig.gif) <br>
 II. &nbsp;&nbsp;&nbsp;&nbsp; [Project Overview](#ii-project-overview) <br>
 III. &nbsp;&nbsp;&nbsp; [Main Features](#iii-main-features) <br>
 IV. &nbsp;&nbsp;&nbsp; [Prerequisites](#iv-prerequisites) <br>
@@ -50,23 +46,22 @@ XI. &nbsp;&nbsp;&nbsp; [Screenshots](#xi-screenshots) <br>
 
 Demo recordings of Playwright test runs can be found in the `media/demos/` folder.
 
-- To view a demo, open the corresponding video file in the `media/demos/` directory.
 - These demos showcase:
-  - Fullscreen UI test execution
+  - Test execution with UI visibility (headed mode)
   - Delayed actions for clear step-by-step visibility
   - Example flows for login, CRUD operations, and role-based access
 
 > Tip: You can record your own demos by running tests in headed mode with slow motion enabled (see the Playwright config and README instructions).
 
 
-<br><br>
+<br>
 
 
 ### I. a. Automated Tests - Playwright
 
 <br>
 
-#### ***Test execution using Playwright Test Runner in headed mode, slowed down for clear visibility of test execution steps - 19 tests, on Chromium, using only 1 worker to show sequential (serial) execution (meaning no parallel execution)** <br>
+#### ***Test execution using Playwright Test Runner in headed mode, slowed down for clear visibility of test execution steps - 19 tests, on Chromium, using only 1 worker to show sequential (serial) execution (meaning no parallel execution)*** <br>
 ![DemoPlaywrightChromiumSlow_orig.gif](media/demos/DemoPlaywrightChromiumSlow_orig.gif) <br><br>
 
 
@@ -74,17 +69,15 @@ Demo recordings of Playwright test runs can be found in the `media/demos/` folde
 ![DemoPlaywrightChromiumFast_orig.gif](media/demos/DemoPlaywrightChromiumFast_orig.gif) <br><br>
 
 
-#### ***Running tests using Playwright Test Runner in headed mode, showcasing the tremendous speed of test execution - 57 tests, on Chromium, Firefox and Webkit, with 12 workers (parallel execution)*** <br
-![DemoPlaywrightChromiumFirefoxWebkitFast_orig.gif](media/demos/DemoPlaywrightChromiumFirefoxWebkitFast_orig.gif) <br><br><br>
+#### ***Running tests using Playwright Test Runner in headed mode, showcasing the tremendous speed of test execution - 57 tests, on Chromium, Firefox and Webkit, with 12 workers (parallel execution)*** <br>
+![DemoPlaywrightChromiumFirefoxWebkitFast_orig.gif](media/demos/DemoPlaywrightChromiumFirefoxWebkitFast_orig.gif) <br><br>
 
 
 ### I. b. Visual Studio Code - UI & CLI
 
-#### ***(Visual Studio Code - UI & CLI - Behind-logic example, structure and running tests from the CLI)*** <br>
+#### ***Visual Studio Code - UI & CLI - Behind-logic example, structure and running tests from the CLI*** <br>
 ![DemoVSCodeChromiumFirefoxWebkitFast_orig.gif](media/demos/DemoVSCodeChromiumFirefoxWebkitFast_orig.gif) <br><br>
 
-
-<br><br>
 
 
 ## II. Project Overview
