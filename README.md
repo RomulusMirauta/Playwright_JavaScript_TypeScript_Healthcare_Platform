@@ -57,23 +57,25 @@ Demo recordings of Playwright test runs can be found in the `media/demos/` folde
 
 
 ### I. a. Automated Tests
-*(Headed Testing on Google Chrome)* <br>
-
-showcasing the tremendous speed of Playwright test execution
-
+*Test execution using Playwright Test Runner in headed mode, showcasing the tremendous speed of test execution - 19 tests, on Chromium, with 12 workers (parallel execution)* <br>
 ![DemoPlaywrightChromiumFast_orig.gif](media/demos/DemoPlaywrightChromiumFast_orig.gif) <br><br>
 
+*Running tests using Playwright Test Runner in headed mode, showcasing the tremendous speed of test execution - 57 tests, on Chromium, Firefox and Webkit, with 12 workers (parallel execution)* <br>
 ![DemoPlaywrightChromiumFirefoxWebkitFast_orig.gif](media/demos/DemoPlaywrightChromiumFirefoxWebkitFast_orig.gif) <br><br>
 
 
 ### I. b. Visual Studio Code & CLI
-*(Behind-logic example, structure and running tests from command line)* <br>
 
-slowed down execution for clear visibility of test execution steps, only 1 worker to show sequential execution (no parallel execution), sequential vs parallel
+*Headed Testing, slowed down execution for clear visibility of test execution steps, using only 1 worker to show sequential (serial) execution (no parallel execution), sequential vs parallel- on Chromium, with 1 worker (sequential execution)* <br>
 ![DemoPlaywrightChromiumSlow_orig.gif](media/demos/DemoPlaywrightChromiumSlow_orig.gif) <br><br>
 
 
+
 VS Code test execution with Playwright Test Runner, showing test structure and running tests from the CLI
+
+
+*(Visual Studio Code - UI & CLI - Behind-logic example, structure and running tests from the CLI)* <br>
+
 ![DemoVSCodeChromiumFirefoxWebkitFast_orig.gif](media/demos/DemoVSCodeChromiumFirefoxWebkitFast_orig.gif) <br><br>
 
 
