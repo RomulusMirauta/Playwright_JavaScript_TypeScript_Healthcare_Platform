@@ -251,7 +251,7 @@ use: {
 },
 ```
 
-- Run tests in headed mode to see the browser UI and the slowed actions:
+- Run tests in headed mode to see the browser UI and the slowed actions - *default command*:
 
 ```bash
 npx playwright test --headed
