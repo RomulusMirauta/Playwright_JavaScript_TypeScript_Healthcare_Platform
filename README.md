@@ -25,9 +25,9 @@ V. &nbsp;&nbsp;&nbsp;&nbsp; [Setup](#v-setup) <br>
 VI. &nbsp;&nbsp;&nbsp; [Running Tests](#vi-running-tests) <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; VI. a. &nbsp; [Tests directory](#vi-a-tests-directory) <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; VI. b. &nbsp; [Preflight (first run)](#vi-b-preflight-first-run) <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; VI. c. &nbsp; [Test structure (where to put code)](#vi-c-test-structure-where-to-put-code) <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; VI. c. &nbsp; [Test structure](#vi-c-test-structure-where-to-insert-the-code) <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; VI. d. &nbsp; [Artifacts & debugging](#vi-d-artifacts--debugging) <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; VI. e. &nbsp; [Useful npm scripts (add if desired)](#vi-e-useful-npm-scripts-add-if-desired) <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; VI. e. &nbsp; [Useful npm scripts](#vi-e-useful-npm-scripts-add-if-desired) <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; VI. f. &nbsp;&nbsp; [CI Info](#vi-f-ci-notes) <br>
 VII. &nbsp;&nbsp; [Notes](#vii-notes) <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; VII. a. &nbsp; [Playwright configuration](#vii-a-playwright-configuration-playwrightconfigts) <br>
@@ -194,7 +194,7 @@ For details about the test structure, fixtures and helper utilities see `tests/R
 
 - Ensure the application under test is running at `BASE_URL` (default `http://localhost:3001/`) or set `BASE_URL` env var before running tests.
 
-### VI. c. Test structure (where to put code)
+### VI. c. Test structure (where to insert the code)
 
 - `tests/common/` — shared config and constants (auth, config).
 - `tests/fixtures/` — custom Playwright fixtures and test data.
